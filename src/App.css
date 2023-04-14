@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+   text-align: center;
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+   position: relative;
+   float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ .item {
+   flex: 1 1 30%;
+   max-width: 30%;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .item {
+     flex: 1 1 100%;
+     max-width: 100%;
+   }
+
+   .container{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+ }
+ 
+.bcard{
+   color: white;
+}
+.cards{
+   width: 300px;
+   height: 300px;
+   margin: 50px;
+   display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card{
+   width: 100px;
+   height: 100px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 100px;
+   margin-right: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.imgcard{
+   width: 200px;
+   height: 200px;
+   margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lform{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   width: 500px;
+   margin: 0 auto;
+   margin-top: 100px;
+   background-image: url('../images/descarga.jpg');
+   background-size: cover;
 }
+
+
+
